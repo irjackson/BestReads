@@ -14,7 +14,7 @@ const Login = () => {
     // prevents page from reloading
     e.preventDefault();
     // find user login information
-    const userLogin = dummyData.find((user) => user.username === uname.value)
+    const userLogin = database.find((user) => user.username === uname.value)
     // if username exists in database
     if (userLogin) {
       // if password doesn't match up
@@ -34,7 +34,6 @@ const Login = () => {
     return (
       <div id='outerBox'>
         <form onSubmit={handleSubmit}>
-        <div id='outerBox'>
           <div id='loginBox'>
             <label><strong>Log In</strong><br/><br/></label>
             <input type="text" placeholder="Username" name="uname" required></input> 
@@ -45,10 +44,9 @@ const Login = () => {
             <Link to='/signup' id='signuplink'>
             <p>Sign up?</p>
             </Link>
-          </div>
         </div>
         </form>
-        </div>
+      </div>
       
     );
 }
