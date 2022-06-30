@@ -14,7 +14,7 @@ const Signup = () => {
     <center>
       <div id='outerBox'>
         <div id='signupBox'>
-          <label>Create Account</label>
+          <label><strong>Create Account</strong><br/><br/></label>
           <form method='POST' action='/api/signup'>
             <input type="text" placeholder="First Name" name="firstname" required></input>
             <input type="text" placeholder="Last Name" name="lastname" required></input>
