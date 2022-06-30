@@ -13,7 +13,7 @@
 }
 
 table {
-    margin-top: 160px;
+    margin-top: 60px;
     margin-left: 50px;
     width: 1000px;
     border-collapse: collapse;
@@ -44,4 +44,8 @@ table {
     border-color: rgb(194, 166, 166);
   }
 
+  #title {
+    margin-top: 100px;
+    margin-left: 500px;
+  }
   

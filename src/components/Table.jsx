@@ -9,6 +9,7 @@ import './Table.css'
 export default function Table () {
     return (
       <div>
+        <h1 id="title">My List</h1>
         <table>
           <thead>
             <tr>

@@ -4,6 +4,7 @@ import './ReviewTable.css'
 export default function reviewTable() {
         return (
             <div>
+            <h1 id="title2">My Reviews</h1>
             <table id='right'>
               <thead>
                 <tr>

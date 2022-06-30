@@ -20,11 +20,42 @@
     border-radius: 20px;
     box-shadow: 3 px 3px 3px rgba(0, 0, 0, 0.292);
 }
-  #loginBox input{
-    padding: 5px;
-    margin-bottom: 5px;
+
+#loginBox input{
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+#loginBox button{
+  background-color: rgba(78, 102, 0, 0.55);
+  color: rgb(243, 243, 243);
+  border: 1.5px solid rgb(78, 102, 0);
+  border-radius: 5px;
+  padding: 5px;
+  width: 80px;
+}
+
+  #loginBox button:hover{
+    background-color: rgb(78, 102, 0);
+    -webkit-transform: translateY(-2px);
+    color: rgb(229, 229, 229);
+    transform: scale(1.08,1.08);
+    box-shadow: 1px 1px 1px rgb(43, 43, 43);
+    transition: .5s;
   }
-  #signuplink {
-      color: white;
-      text-decoration: none;
-  }
+
+
+/* #loginlink {
+  background-color: rgb(194, 166, 166);
+} */
+
+#loginBox form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#signuplink {
+    color: white;
+    text-decoration: none;
+}
