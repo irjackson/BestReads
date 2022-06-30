@@ -1,15 +1,15 @@
 import React, { Component } from "react";
 import Navbar from '../../components/Navbar.jsx'
 
-const Explore = () => {
+const About = () => {
 
     return (
     <div id="App">
         <Navbar />
-        <h1>Explore Page!</h1>
+        <h1>About Page!</h1>
     </div>
   );
 }
 
 
-export default Explore;
+export default About;

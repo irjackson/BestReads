@@ -9,14 +9,17 @@ const Navbar = () => {
         <nav id='navbar'>
             <div id='el'>
                 <img src={img}/>              
-                  <Link to='/'>
+                  <Link to='/app'>
                     <button class='links'>Home</button>
                   </Link>
-                  <Link to='/'>
+                  <Link to='/explore'>
                     <button class='links'>Explore</button>
                   </Link>
-                  <Link to='/'>
+                  <Link to='/about'>
                     <button class='links'>About</button>
+                  </Link>
+                  <Link to='/'>
+                    <button class='links' id="logout">Logout</button>
                   </Link>
             </div>
         </nav>
