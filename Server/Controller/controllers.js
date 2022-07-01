@@ -32,6 +32,32 @@ module.exports = {
             res.locals.message = 'Failed to add user'
             return next(err);
         }
+    }, //this is not what was suppose to happy lol, but we present in 1 hr
+    addBook: async (req, res, next) => {
+            try {
+                const { title } = req.body;
+                console.log(req.body)
+                await db.query(`INSERT INTO books(title, author, publisher, published_date) VALUES ('${title}', 'null', 'null', NOW()::Date);`)
+                return next();
+            }
+        catch (err) {
+            console.log(err)
+            res.locals.book = 'Failed to add book'
+            return next(err);
+        }  
     },
+    getBooks: async (req, res, next) => {
+            try{
+                const books = await db.query(`SELECT title FROM books;`)
+                res.locals.allBooks = books.rows;
+                return next();
+            }
+            catch (err) {
+                console.log(err)
+                res.locals.allBooks = 'Failed to get all books'
+                return next(err);
+            }  
+    }
 }
+
 

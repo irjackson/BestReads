@@ -1,8 +1,8 @@
-#outerBox{
-display: flex;
-flex-direction: column;
-align-items: center;
-height: 50vw;
+#outerBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 50vh;
 }
 
 #signupBox {
@@ -15,14 +15,16 @@ height: 50vw;
   width: fit-content;
   padding: 30px;
   background-color: rgb(194, 166, 166);
+  text-shadow: 1px 1px 2px black;
   border: 3px solid;
   border-radius: 20px;
-  box-shadow: 3 px 3px 3px rgba(0, 0, 0, 0.292);
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.292);
 }
 
 #signupBox input{
   padding: 5px;
   margin-bottom: 5px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.499);
 }
 
 #signupBox button{
@@ -34,14 +36,14 @@ height: 50vw;
   width: 80px;
 }
 
-  #signupBox button:hover{
-    background-color: rgb(78, 102, 0);
-    -webkit-transform: translateY(-2px);
-    color: rgb(229, 229, 229);
-    transform: scale(1.08,1.08);
-    box-shadow: 1px 1px 1px rgb(43, 43, 43);
-    transition: .5s;
-  }
+#signupBox button:hover{
+  background-color: rgb(78, 102, 0);
+  -webkit-transform: translateY(-2px);
+  color: rgb(229, 229, 229);
+  transform: scale(1.08,1.08);
+  box-shadow: 1px 1px 1px rgb(43, 43, 43);
+  transition: .5s;
+}
 
 #signupBox form{
   display: flex;

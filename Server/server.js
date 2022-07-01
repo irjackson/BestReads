@@ -23,6 +23,7 @@ app.get('/', (req, res) => {
     return res.status(200).sendFile(path.join(__dirname, '../dist/index.html'));
 })
 
+// //dont need this since it's already created in apiRoutes
 app.get('/signup', (req, res) => {
     return res.status(200).sendFile(path.join(__dirname, '../dist/index.html'));
 })

@@ -11,7 +11,7 @@ const Login = () => {
       <div id='outerBox'>
       <div id='loginBox'>
         <img src={img}/>  
-        <label><strong>Log In</strong></label><br/>
+        <label><strong>Log In</strong><br/><br/></label>
         <form method='POST' action='/api/login'>
           <input type="text" placeholder="Username" name="username" required></input> 
           <input type="password" placeholder="Password" name="password"required></input>
