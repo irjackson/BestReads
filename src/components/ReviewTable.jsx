@@ -8,12 +8,12 @@ export default function reviewTable() {
             <table id='right'>
               <thead>
                 <tr>
-                  <th>review1</th>
+                  <th>Review1</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td>review2</td>
+                  <td>Review2</td>
                 </tr>
               </tbody>
             </table>
