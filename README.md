@@ -1,1 +1,1 @@
-# BetterReadsProject
+# BestReads
