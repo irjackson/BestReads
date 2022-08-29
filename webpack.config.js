@@ -6,6 +6,7 @@ module.exports = {
   entry: path.join(__dirname, "src", "index.js"),
   output: {
     path: path.resolve(__dirname, 'dist'),
+    //filename: 'bundle.js',
   },
 
   devServer: {
@@ -23,14 +24,14 @@ module.exports = {
       publicPath: '/',
     },
     proxy: {
-      '/api/**': 'http://localhost:3000/',
-  },
+      '/api/**': 'http://localhost:3000'
+    },
   },
 
   module: {
     rules: [
       {
-        test: /\.?js$/,
+        test: /\.(js|jsx)$/,
         exclude: /node_module/,
         use: {
           loader: "babel-loader",
@@ -48,22 +49,24 @@ module.exports = {
                 presets:['@babel/preset-env', '@babel/preset-react']
             }
         }
-    },
-    {
-      test: /\.s[ac]ss$/i,
-      use: [
-          "style-loader",
-          "css-loader",
-          "sass-loader",
-       ],
-    },
-    {
-      test: /\.(png|svg|jpg|jpeg|gif)$/i,
-      type: 'asset/resource',
-    },
+      },
+      {
+        test: /\.css$/i,
+        use: [
+            "style-loader",
+            "css-loader"
+          ]
+      }, 
+      {
+        test: /\.(png|jpe?g|gif)$/i,
+        use: [
+          {
+            loader: 'file-loader'
+          }
+        ]
+      }
     ]
   },
-  
   plugins: [  
     new HtmlWebpackPlugin({
      template: path.join(__dirname, "src", "index.html"),

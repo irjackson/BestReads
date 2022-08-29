@@ -1,0 +1,39 @@
+#search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+}
+#SearchBar {
+    margin-right: 20px;
+    width: 250px;
+    height: 20px;
+}
+
+#SearchButton {
+    width: 100px;
+}
+
+#tableDiv tbody {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+    height: 55vh;
+    width: 100%;
+}
+
+#tableDiv tr {
+    display: block;
+    height: 120px;
+    min-width: 500px;
+    background-color: rgb(220, 188, 188);
+    color: black;
+    font-family: arial;
+    font-size: 30px;
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+}

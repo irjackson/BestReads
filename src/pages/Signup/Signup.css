@@ -1,0 +1,58 @@
+#outerBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 50vh;
+}
+
+#signupBox {
+  display:flex;
+  font-size: 20px;
+  color: white;
+  flex-direction: column;
+  align-items: center;
+  height: fill;
+  width: fit-content;
+  padding: 30px;
+  background-color: rgb(194, 166, 166);
+  text-shadow: 1px 1px 2px black;
+  border: 3px solid;
+  border-radius: 20px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.292);
+}
+
+#signupBox input{
+  padding: 5px;
+  margin-bottom: 5px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.499);
+}
+
+#signupBox button{
+  background-color: rgba(78, 102, 0, 0.55);
+  color: rgb(243, 243, 243);
+  border: 1.5px solid rgb(78, 102, 0);
+  border-radius: 5px;
+  padding: 5px;
+  width: 80px;
+}
+
+#signupBox button:hover{
+  background-color: rgb(78, 102, 0);
+  -webkit-transform: translateY(-2px);
+  color: rgb(229, 229, 229);
+  transform: scale(1.08,1.08);
+  box-shadow: 1px 1px 1px rgb(43, 43, 43);
+  transition: .5s;
+}
+
+#signupBox form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#loginlink {
+  color: white;
+  text-decoration: none;
+}
+
